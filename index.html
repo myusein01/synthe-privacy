@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Synthé</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --card: #f7f7fb;
+    --text: #1c1b22;
+    --muted: #5a5866;
+    --accent: #5b4cff;
+    --border: #e6e5ee;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 22px 80px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 0 0 6px;
+  }
+  h2 {
+    font-size: 21px;
+    margin: 38px 0 10px;
+    padding-top: 6px;
+  }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  .lead { font-size: 16px; color: var(--muted); margin-top: 4px; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 15px;
+  }
+  .table-scroll { overflow-x: auto; }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 15px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14131a;
+      --card: #1e1d26;
+      --text: #ececf2;
+      --muted: #a09eb0;
+      --accent: #a99cff;
+      --border: #2b2a35;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Politique de confidentialité de Synthé</h1>
+  <p class="lead">Dernière mise à jour : 23 juillet 2026</p>
+</header>
+
+<p>
+  Cette page explique quelles données l'application <strong>Synthé</strong> collecte, pourquoi,
+  où elles vont (sur votre téléphone ou vers un serveur), et quels services tiers interviennent.
+  Elle décrit le fonctionnement réel de l'application, sans zone d'ombre.
+</p>
+
+<div class="card">
+  <strong>En bref&nbsp;:</strong>
+  <ul>
+    <li>Vos <strong>notes, dossiers, conversations et enregistrements restent sur votre téléphone</strong> — ils ne sont pas copiés sur nos serveurs.</li>
+    <li>Le contenu que vous transformez en note (audio, PDF, photos, texte, liens) est <strong>envoyé à notre serveur</strong> le temps de le traiter, puis relayé à des services d'IA.</li>
+    <li>Les <strong>fichiers bruts que vous envoyez sont supprimés de nos serveurs juste après le traitement.</strong></li>
+    <li><strong>Aucune publicité, aucun traceur, aucune revente de données.</strong></li>
+  </ul>
+</div>
+
+<h2>1. Responsable du traitement</h2>
+<p>
+  L'éditeur et responsable du traitement des données est&nbsp;:
+</p>
+<ul>
+  <li><strong>Myumyun Yusein</strong></li>
+  <li>Contact&nbsp;: <a href="mailto:myusein01@gmail.com">myusein01@gmail.com</a></li>
+</ul>
+<p class="muted">
+  Pour toute question sur cette politique ou sur vos données, écrivez à cette adresse.
+</p>
+
+<h2>2. Le compte</h2>
+<p>
+  Pour utiliser Synthé, vous créez un compte via <strong>Se connecter avec Google</strong> ou
+  <strong>Se connecter avec Apple</strong>. Cette connexion est gérée par notre prestataire
+  d'authentification <strong>Supabase</strong>.
+</p>
+<p>
+  À cette occasion, nous recevons de Google ou d'Apple les informations d'identité de base associées
+  à votre choix de connexion (typiquement votre <strong>adresse e-mail</strong> et, le cas échéant, votre <strong>nom</strong>).
+  Un jeton de session est conservé sur votre téléphone pour vous garder connecté.
+</p>
+
+<h2>3. Ce qui reste sur votre téléphone</h2>
+<p>
+  L'essentiel de vos données ne quitte jamais votre appareil. Sont stockés localement (et supprimés
+  si vous supprimez l'élément concerné ou désinstallez l'application)&nbsp;:
+</p>
+<ul>
+  <li>Vos <strong>notes générées</strong> (résumés, points clés, transcriptions, cartes mentales, quiz, fiches).</li>
+  <li>Vos <strong>dossiers</strong> et leur organisation.</li>
+  <li>Vos <strong>conversations de chat</strong> avec vos notes.</li>
+  <li>Vos <strong>enregistrements audio</strong> et les <strong>audios de podcast</strong> téléchargés (dossier de documents de l'app).</li>
+  <li>Vos <strong>réglages</strong> (rappels, vibrations) et vos <strong>réponses d'onboarding</strong> (profil d'étudiant, objectifs).</li>
+  <li>Un compteur interne du palier gratuit.</li>
+</ul>
+<p class="muted">
+  Nous ne conservons pas de copie de vos notes sur nos serveurs et elles ne sont pas synchronisées
+  entre plusieurs appareils.
+</p>
+
+<h2>4. Ce qui est envoyé à notre serveur</h2>
+<p>
+  Créer une note nécessite un traitement que le téléphone ne peut pas faire seul. Quand vous créez
+  ou enrichissez une note, le contenu correspondant est <strong>envoyé à notre serveur</strong>, qui
+  le transmet à des services d'IA (voir section 5) puis vous renvoie le résultat&nbsp;:
+</p>
+<ul>
+  <li>Les <strong>enregistrements audio</strong> que vous capturez ou importez.</li>
+  <li>Les <strong>fichiers PDF</strong> et les <strong>photos</strong> de pages de cours.</li>
+  <li>Le <strong>texte collé</strong> et les <strong>liens</strong> (vidéo YouTube, article web) que vous soumettez.</li>
+  <li>Le <strong>contenu de vos notes</strong> lorsque vous générez un quiz, des fiches, un podcast, ou que vous discutez avec une note (chat).</li>
+  <li>Les <strong>avis et signalements</strong> que vous choisissez d'envoyer.</li>
+</ul>
+<p>
+  Ces données servent <strong>uniquement</strong> à produire ce que vous demandez (transcription,
+  résumé, quiz, fiches, réponse de chat, audio de podcast) et à faire fonctionner et améliorer le service.
+</p>
+
+<h2>5. Services tiers réellement utilisés</h2>
+<p>Synthé s'appuie sur les prestataires suivants, et sur eux seulement&nbsp;:</p>
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Service</th><th>Rôle</th><th>Ce qu'il reçoit</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Anthropic (Claude)</strong></td>
+      <td>Génération de texte&nbsp;: résumés, cartes mentales, quiz, fiches, réponses de chat, scripts de podcast.</td>
+      <td>Le texte à traiter (transcription, texte collé, contenu de PDF, images) et vos messages de chat.</td>
+    </tr>
+    <tr>
+      <td><strong>AssemblyAI</strong></td>
+      <td>Transcription de l'audio en texte (reconnaissance vocale).</td>
+      <td>Vos enregistrements audio et l'audio extrait des vidéos YouTube.</td>
+    </tr>
+    <tr>
+      <td><strong>ElevenLabs</strong></td>
+      <td>Synthèse vocale&nbsp;: génère l'audio des podcasts de révision.</td>
+      <td>Le script du podcast (texte) issu de votre note.</td>
+    </tr>
+    <tr>
+      <td><strong>Supabase</strong></td>
+      <td>Authentification (votre compte) et stockage des avis/signalements que vous envoyez.</td>
+      <td>Votre identité de connexion&nbsp;; le contenu de vos avis/signalements.</td>
+    </tr>
+    <tr>
+      <td><strong>Google / Apple</strong></td>
+      <td>Connexion « Se connecter avec Google / Apple ».</td>
+      <td>L'authentification de votre identité.</td>
+    </tr>
+    <tr>
+      <td><strong>YouTube</strong></td>
+      <td>Import d'un lien YouTube&nbsp;: notre serveur récupère l'audio de la vidéo pour le transcrire.</td>
+      <td>Le lien que vous fournissez.</td>
+    </tr>
+    <tr>
+      <td><strong>Apple — App&nbsp;Store</strong></td>
+      <td>Traitement du paiement de l'abonnement.</td>
+      <td>Votre paiement. <em>Nous ne voyons jamais vos coordonnées bancaires.</em></td>
+    </tr>
+    <tr>
+      <td><strong>RevenueCat</strong></td>
+      <td>Gestion et validation de l'abonnement.</td>
+      <td>L'état de votre abonnement, rattaché à un identifiant anonyme généré par l'app (ni nom, ni e-mail).</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="muted">
+  Nous ne faisons appel à aucune régie publicitaire ni à aucun outil de suivi analytique&nbsp;:
+  l'application n'intègre aucun traceur.
+</p>
+
+<h2>6. Où sont traitées les données</h2>
+<p>
+  Notre serveur et notre base de données (Supabase) sont hébergés dans l'<strong>Union européenne</strong>.
+</p>
+<p>
+  Certains services d'IA que nous utilisons — <strong>Anthropic, AssemblyAI, ElevenLabs</strong> — ainsi que
+  <strong>RevenueCat</strong>, sont établis aux <strong>États-Unis</strong>. Les données nécessaires à leur
+  fonctionnement leur sont donc transférées hors de l'Union européenne, encadré par les garanties
+  contractuelles prévues à cet effet. De même, la connexion via Google ou Apple implique ces prestataires
+  internationaux.
+</p>
+
+<h2>7. Durée de conservation</h2>
+<ul>
+  <li><strong>Fichiers bruts envoyés au serveur</strong> (audio, PDF, photos)&nbsp;:
+      <strong>supprimés de nos serveurs juste après le traitement.</strong></li>
+  <li><strong>Contenus générés</strong> (transcriptions, notes, audio de podcast, audio extrait de YouTube)&nbsp;:
+      une copie peut être <strong>conservée sur nos serveurs</strong> le temps de vous livrer le résultat,
+      de mettre en cache et d'améliorer le service. Aucune durée fixe n'est garantie à ce jour.</li>
+  <li><strong>Données sur votre téléphone</strong>&nbsp;: conservées tant que vous ne supprimez pas
+      l'élément concerné ou l'application.</li>
+  <li><strong>Compte et avis/signalements</strong>&nbsp;: conservés tant que votre compte existe,
+      ou jusqu'à votre demande de suppression.</li>
+</ul>
+<p>
+  Vous pouvez à tout moment nous demander la suppression des données vous concernant conservées côté serveur,
+  à l'adresse <a href="mailto:myusein01@gmail.com">myusein01@gmail.com</a>.
+</p>
+
+<h2>8. Notifications</h2>
+<p>
+  Les rappels et notifications de Synthé sont <strong>locaux</strong>&nbsp;: ils sont programmés par votre
+  téléphone lui-même. Aucun serveur de notification n'est utilisé et aucune donnée n'est envoyée pour les
+  faire fonctionner. La permission n'est demandée qu'au moment où vous activez un rappel.
+</p>
+
+<h2>9. Base légale</h2>
+<ul>
+  <li><strong>Exécution du service</strong> que vous demandez (créer et gérer vos notes, gérer votre abonnement).</li>
+  <li><strong>Votre consentement</strong> pour les fonctions optionnelles (notifications, envoi d'avis).</li>
+  <li><strong>Notre intérêt légitime</strong> à assurer la sécurité et l'amélioration du service.</li>
+</ul>
+
+<h2>10. Vos droits</h2>
+<p>
+  Conformément au Règlement général sur la protection des données (RGPD), vous disposez d'un droit
+  d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité de vos données.
+  Pour les exercer, écrivez à <a href="mailto:myusein01@gmail.com">myusein01@gmail.com</a>.
+</p>
+<p>
+  Vous pouvez également introduire une réclamation auprès de l'autorité de protection des données
+  compétente de votre pays.
+</p>
+
+<h2>11. Mineurs</h2>
+<p>
+  Synthé s'adresse aux étudiants. Si vous êtes mineur, utilisez l'application avec l'accord d'un parent
+  ou d'un responsable légal. Nous ne collectons pas sciemment de données auprès d'enfants en deçà de
+  l'âge du consentement numérique applicable dans leur pays.
+</p>
+
+<h2>12. Modifications</h2>
+<p>
+  Cette politique peut évoluer si l'application change. La date de dernière mise à jour figure en haut
+  de la page&nbsp;; les modifications importantes vous seront signalées dans l'application le cas échéant.
+</p>
+
+<h2>13. Contact</h2>
+<p>
+  Pour toute question relative à cette politique ou à vos données personnelles&nbsp;:<br>
+  <strong>Myumyun Yusein</strong> — <a href="mailto:myusein01@gmail.com">myusein01@gmail.com</a>
+</p>
+
+<footer>
+  Synthé — Politique de confidentialité — Dernière mise à jour le 23 juillet 2026.
+</footer>
+
+</div>
+</body>
+</html>
