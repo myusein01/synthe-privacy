@@ -101,7 +101,7 @@
 
 <header>
   <h1>Politique de confidentialité de Synthé</h1>
-  <p class="lead">Dernière mise à jour : 23 juillet 2026</p>
+  <p class="lead">Dernière mise à jour : 27 juillet 2026</p>
 </header>
 
 <p>
@@ -116,6 +116,7 @@
     <li>Vos <strong>notes, dossiers, conversations et enregistrements restent sur votre téléphone</strong> — ils ne sont pas copiés sur nos serveurs.</li>
     <li>Le contenu que vous transformez en note (audio, PDF, photos, texte, liens) est <strong>envoyé à notre serveur</strong> le temps de le traiter, puis relayé à des services d'IA.</li>
     <li>Les <strong>fichiers bruts que vous envoyez sont supprimés de nos serveurs juste après le traitement.</strong></li>
+    <li>Vous pouvez <strong>supprimer votre compte et toutes vos données directement depuis l'application</strong>, sans nous écrire (voir section 8).</li>
     <li><strong>Aucune publicité, aucun traceur, aucune revente de données.</strong></li>
   </ul>
 </div>
@@ -171,7 +172,9 @@
 <ul>
   <li>Les <strong>enregistrements audio</strong> que vous capturez ou importez.</li>
   <li>Les <strong>fichiers PDF</strong> et les <strong>photos</strong> de pages de cours.</li>
-  <li>Le <strong>texte collé</strong> et les <strong>liens</strong> (vidéo YouTube, article web) que vous soumettez.</li>
+  <li>Le <strong>texte collé</strong> et les <strong>liens</strong> (vidéo YouTube, article web) que vous soumettez.
+      Pour une vidéo YouTube, ce sont les <strong>sous-titres</strong> de la vidéo qui sont récupérés puis
+      mis en forme&nbsp;: la vidéo elle-même n'est ni téléchargée ni conservée.</li>
   <li>Le <strong>contenu de vos notes</strong> lorsque vous générez un quiz, des fiches, un podcast, ou que vous discutez avec une note (chat).</li>
   <li>Les <strong>avis et signalements</strong> que vous choisissez d'envoyer.</li>
 </ul>
@@ -196,7 +199,7 @@
     <tr>
       <td><strong>AssemblyAI</strong></td>
       <td>Transcription de l'audio en texte (reconnaissance vocale).</td>
-      <td>Vos enregistrements audio et l'audio extrait des vidéos YouTube.</td>
+      <td>Vos enregistrements audio et les fichiers audio ou vidéo que vous importez.</td>
     </tr>
     <tr>
       <td><strong>ElevenLabs</strong></td>
@@ -214,9 +217,14 @@
       <td>L'authentification de votre identité.</td>
     </tr>
     <tr>
+      <td><strong>Supadata</strong><br><span class="muted">Dumpling Software UG, Berlin (Allemagne)</span></td>
+      <td>Import d'un lien YouTube&nbsp;: récupère les sous-titres de la vidéo, que nous transformons ensuite en note.</td>
+      <td>L'adresse de la vidéo que vous fournissez. Aucune donnée de compte ne lui est transmise.</td>
+    </tr>
+    <tr>
       <td><strong>YouTube</strong></td>
-      <td>Import d'un lien YouTube&nbsp;: notre serveur récupère l'audio de la vidéo pour le transcrire.</td>
-      <td>Le lien que vous fournissez.</td>
+      <td>Source de la vidéo&nbsp;: nous récupérons ses sous-titres et son titre. Le lecteur intégré à une note importée provient également de YouTube.</td>
+      <td>L'adresse de la vidéo. Lorsque vous lisez la vidéo dans l'application, YouTube reçoit la requête de lecture comme sur son propre site.</td>
     </tr>
     <tr>
       <td><strong>Apple — App&nbsp;Store</strong></td>
@@ -239,6 +247,8 @@
 <h2>6. Où sont traitées les données</h2>
 <p>
   Notre serveur et notre base de données (Supabase) sont hébergés dans l'<strong>Union européenne</strong>.
+  <strong>Supadata</strong>, qui traite les liens de vidéos YouTube, est édité par une société établie en
+  <strong>Allemagne</strong> et relève donc également du droit européen.
 </p>
 <p>
   Certains services d'IA que nous utilisons — <strong>Anthropic, AssemblyAI, ElevenLabs</strong> — ainsi que
@@ -252,34 +262,63 @@
 <ul>
   <li><strong>Fichiers bruts envoyés au serveur</strong> (audio, PDF, photos)&nbsp;:
       <strong>supprimés de nos serveurs juste après le traitement.</strong></li>
-  <li><strong>Contenus générés</strong> (transcriptions, notes, audio de podcast, audio extrait de YouTube)&nbsp;:
+  <li><strong>Contenus générés</strong> (transcriptions, notes, audio de podcast)&nbsp;:
       une copie peut être <strong>conservée sur nos serveurs</strong> le temps de vous livrer le résultat,
       de mettre en cache et d'améliorer le service. Aucune durée fixe n'est garantie à ce jour.</li>
   <li><strong>Données sur votre téléphone</strong>&nbsp;: conservées tant que vous ne supprimez pas
       l'élément concerné ou l'application.</li>
-  <li><strong>Compte et avis/signalements</strong>&nbsp;: conservés tant que votre compte existe,
-      ou jusqu'à votre demande de suppression.</li>
+  <li><strong>Compte</strong>&nbsp;: conservé tant que vous ne le supprimez pas (voir section 8).</li>
+  <li><strong>Avis et signalements</strong>&nbsp;: conservés sans limite de durée, mais
+      <strong>enregistrés sans aucun identifiant permettant de les relier à votre compte</strong>
+      — nous ne pouvons donc pas savoir lesquels viennent de vous.</li>
 </ul>
 <p>
   Vous pouvez à tout moment nous demander la suppression des données vous concernant conservées côté serveur,
   à l'adresse <a href="mailto:myusein01@gmail.com">myusein01@gmail.com</a>.
 </p>
 
-<h2>8. Notifications</h2>
+<h2>8. Suppression de votre compte</h2>
+<p>
+  Vous pouvez supprimer votre compte <strong>directement depuis l'application</strong>, sans avoir à nous
+  écrire&nbsp;: <strong>Réglages → Compte → Supprimer mon compte</strong>. La suppression est immédiate et
+  définitive.
+</p>
+<p>Elle entraîne&nbsp;:</p>
+<ul>
+  <li>la <strong>suppression définitive de votre compte</strong> chez notre prestataire d'authentification
+      (Supabase), y compris l'adresse e-mail et le nom associés à votre connexion&nbsp;;</li>
+  <li>l'<strong>effacement de toutes les données présentes sur votre téléphone</strong>&nbsp;: notes, dossiers,
+      conversations, enregistrements, réglages et réponses d'onboarding.</li>
+</ul>
+<p>
+  Deux points à connaître&nbsp;:
+</p>
+<ul>
+  <li><strong>Un abonnement en cours n'est pas résilié automatiquement.</strong> Les abonnements sont gérés par
+      l'App Store et rattachés à votre identifiant Apple, non à votre compte Synthé&nbsp;: vous devez le résilier
+      dans les réglages de votre identifiant Apple.</li>
+  <li>Les <strong>avis et signalements</strong> déjà envoyés ne peuvent pas être supprimés, car ils sont
+      enregistrés sans lien avec votre compte (voir section 7) — ils ne vous identifient pas.</li>
+</ul>
+<p class="muted">
+  Rien ne vous empêche de recréer un compte ensuite&nbsp;; il repartira vierge.
+</p>
+
+<h2>9. Notifications</h2>
 <p>
   Les rappels et notifications de Synthé sont <strong>locaux</strong>&nbsp;: ils sont programmés par votre
   téléphone lui-même. Aucun serveur de notification n'est utilisé et aucune donnée n'est envoyée pour les
   faire fonctionner. La permission n'est demandée qu'au moment où vous activez un rappel.
 </p>
 
-<h2>9. Base légale</h2>
+<h2>10. Base légale</h2>
 <ul>
   <li><strong>Exécution du service</strong> que vous demandez (créer et gérer vos notes, gérer votre abonnement).</li>
   <li><strong>Votre consentement</strong> pour les fonctions optionnelles (notifications, envoi d'avis).</li>
   <li><strong>Notre intérêt légitime</strong> à assurer la sécurité et l'amélioration du service.</li>
 </ul>
 
-<h2>10. Vos droits</h2>
+<h2>11. Vos droits</h2>
 <p>
   Conformément au Règlement général sur la protection des données (RGPD), vous disposez d'un droit
   d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité de vos données.
@@ -290,27 +329,27 @@
   compétente de votre pays.
 </p>
 
-<h2>11. Mineurs</h2>
+<h2>12. Mineurs</h2>
 <p>
   Synthé s'adresse aux étudiants. Si vous êtes mineur, utilisez l'application avec l'accord d'un parent
   ou d'un responsable légal. Nous ne collectons pas sciemment de données auprès d'enfants en deçà de
   l'âge du consentement numérique applicable dans leur pays.
 </p>
 
-<h2>12. Modifications</h2>
+<h2>13. Modifications</h2>
 <p>
   Cette politique peut évoluer si l'application change. La date de dernière mise à jour figure en haut
   de la page&nbsp;; les modifications importantes vous seront signalées dans l'application le cas échéant.
 </p>
 
-<h2>13. Contact</h2>
+<h2>14. Contact</h2>
 <p>
   Pour toute question relative à cette politique ou à vos données personnelles&nbsp;:<br>
   <strong>Myumyun Yusein</strong> — <a href="mailto:myusein01@gmail.com">myusein01@gmail.com</a>
 </p>
 
 <footer>
-  Synthé — Politique de confidentialité — Dernière mise à jour le 23 juillet 2026.
+  Synthé — Politique de confidentialité — Dernière mise à jour le 27 juillet 2026.
 </footer>
 
 </div>
